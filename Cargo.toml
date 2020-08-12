@@ -1,5 +1,5 @@
 [package]
-name = "bible-api"
+name = "bible_api"
 version = "0.1.0"
 authors = ["Debojit Roy <debojit.roy@unohomeloans.com.au>"]
 edition = "2018"
@@ -7,3 +7,13 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tokio = { version = "0.2", features = ["macros"] }
+futures = "0.3"
+serde = { version = "1.0.114", features = ["derive"] }
+serde_json = "1.0.57"
+envy = "0.4"
+warp = "0.2"
+dynomite = "0.9"
+dotenv = "0.15.0"
+rusoto_core = "0.44"
+thiserror = "1.0"
